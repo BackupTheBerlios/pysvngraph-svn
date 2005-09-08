@@ -1,0 +1,10 @@
+[main]
+
+graph_option_draw_deleted_tags = 1
+graph_option_draw_tags = 1
+graph_option_draw_all_work = 1
+
+dirs=../../src/configdir
+files=default,style,gtkradiantsvn
+sections=pdf,file,graph-simple,WolfPack
+

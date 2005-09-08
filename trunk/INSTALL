@@ -1,0 +1,54 @@
+A. OS specific
+
+    Windows users :
+    ---------------
+
+    Install the win32 NSIS installer. It will associate pysvngraph to .pysvngraph files
+    Just click on a .pysvngraph file
+
+    Every other users :
+    -------------------
+
+    Use python source, and execute pysvngraph.py with a .pysvngraph file as argument.
+
+B. Configuration files
+
+    The configuration system is very simple, but may seems strange at first glance.
+    A configuration setting is a set of cuples (key,value) that provide information
+    to pysvngraph.
+
+    A configuration file has a .ini structure (More exactly, it's read by a Python's ConfigParser)
+
+    The special section "[main]" is the main section of the file. It's this one that is read.
+
+    this section may include several other sections by using the special "sections" key, containing
+    a list separated by "," of the sections to include. So it's easy to make several set of
+    configurations and include them or not.
+
+    You can even use sections from other files. Just put a "files" key with names of
+    the files (without the .pysvngraph extension) separated by ",". The sections will be search in all the files
+    specified by the "files" special key.
+
+    You can of course use files from several directories. Just put a "dirs" ky with names of the
+    directories separated by ",". The files in the "files" key will be searched in all the
+    directories listed in "dirs" special key.
+
+    Exemple :
+        [main]
+        dirs=/usr/share/pysvngraph/config
+        files=style,default
+        sections=pdf,graph-simple
+
+C. Dependences
+
+    pysvngraph use python.
+    * It works on python2.2 and python2.4 (it should work on python2.3)
+    * pdf rendering require reportlab ( http://reportlab.org )
+    * pysvn (svn extension for python), but hasn't been tested for times, and may not work anymore.
+      Please use "file" instead. To create the history file, just use :
+
+      $ svn log -v URL_OF_THE_ROOT_OF_YOU_REPOSITORY > FILENAME_YOU_WILL_USE_IN_THE_KEY_filename_OF_CONFIG
+
+    Right now, only pdf and html can be generate. It would be quite simple to make some more backend.
+
+

@@ -1,0 +1,14 @@
+[pdf]
+graphRenderer=Reportlab
+
+[html]
+graphRenderer=Html
+
+[pysvn]
+svnHistory=pysvn
+
+[file]
+svnHistory=File
+
+
+

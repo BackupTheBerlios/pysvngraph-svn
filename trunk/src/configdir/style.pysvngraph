@@ -1,0 +1,67 @@
+[graph-simple]
+
+graph_size_border = 3
+
+graph_size_width_column = 100
+graph_size_height_atorevision = 40
+
+graph_size_width_label = 80
+graph_size_height_label = 26
+
+graph_size_offset_label_left = 50
+graph_size_offset_label_top = 50
+
+graph_size_localoffset_merge_from_center = 20
+
+graph_size_localoffset_rebranche_top = 0
+
+graph_size_offset_revision_left = 10
+
+graph_size_localoffset_mergeline_vspace = 4
+graph_size_localoffset_mergeline_left = 3
+
+graph_size_localoffset_mergebar_left = 8
+
+graph_option_draw_deleted_tags = 0
+graph_option_draw_tags = 0
+graph_option_draw_all_work = 0
+graph_option_highlight_authors =
+
+graph_option_write_text = 1
+graph_option_draw_revision = 1
+
+graph_fit_to_page = 1
+
+[graph-DNA]
+
+graph_size_border = 1
+
+graph_size_width_column = 35
+graph_size_height_atorevision = 2
+
+graph_size_width_label = 30
+graph_size_height_label = 1
+
+graph_size_offset_label_left = 10
+graph_size_offset_label_top = 10
+
+graph_size_localoffset_merge_from_center = 6
+
+graph_size_localoffset_rebranche_top = 0
+
+graph_size_offset_revision_left = 3
+
+graph_size_localoffset_mergeline_vspace = 0
+graph_size_localoffset_mergeline_left = -1
+
+graph_size_localoffset_mergebar_left = 5
+
+graph_option_draw_deleted_tags = 0
+graph_option_draw_tags = 1
+graph_option_draw_all_work = 1
+graph_option_highlight_authors =
+
+graph_option_write_text = 0
+graph_option_draw_revision = 0
+
+graph_fit_to_page = 1
